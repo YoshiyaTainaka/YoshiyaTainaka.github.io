@@ -37,7 +37,7 @@ function successCallback(stream) {
     if (tracks[i].kind == 'video') {
       console.log('aspectRatio: '+constraints.aspectRatio)
       console.log('facingMode: '+constraints.facingMode)
-      sampleArea.insertAdjacentHTML("beforeend", JSON.stringify(constraints.facingMode));
+      //sampleArea.insertAdjacentHTML("beforeend", JSON.stringify(constraints.facingMode));
       console.log('frameRate: '+constraints.frameRate)
       console.log('height: '+constraints.height)
       console.log('width: '+constraints.width)
