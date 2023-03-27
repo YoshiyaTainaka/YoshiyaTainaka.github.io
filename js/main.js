@@ -36,7 +36,7 @@ function successCallback(stream) {
     if (tracks[i].kind == 'video') {
       console.log('aspectRatio: '+constraints.aspectRatio)
       console.log('facingMode: '+constraints.facingMode)
-      document.write('<div> facingMode: '+constraints.facingMode+'</div>')
+      document.write('<br> facingMode: '+constraints.facingMode)
       console.log('frameRate: '+constraints.frameRate)
       console.log('height: '+constraints.height)
       console.log('width: '+constraints.width)
