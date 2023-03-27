@@ -8,6 +8,7 @@ const medias = {
 };
 const video = document.getElementById("video");
 const promise = navigator.mediaDevices.getUserMedia(medias);
+const sampleArea = document.getElementById("sampleArea");
 
 promise.then(successCallback)
        .catch(errorCallback);
@@ -36,7 +37,7 @@ function successCallback(stream) {
     if (tracks[i].kind == 'video') {
       console.log('aspectRatio: '+constraints.aspectRatio)
       console.log('facingMode: '+constraints.facingMode)
-      document.write('<br> facingMode: '+constraints.facingMode)
+      sampleArea.insertAdjacentHTML("beforeend", '<br> facingMode: '+constraints.facingMode);
       console.log('frameRate: '+constraints.frameRate)
       console.log('height: '+constraints.height)
       console.log('width: '+constraints.width)
