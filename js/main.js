@@ -14,6 +14,11 @@ promise.then(successCallback)
        .catch(errorCallback);
 
 function successCallback(stream) {
+  
+  
+  let supported = navigator.mediaDevices.getSupportedConstraints();
+  console.log(supported);
+  
     // MediaTrackの取得
   let tracks = stream.getTracks();
   for (let i = 0; i < tracks.length; i++) {
