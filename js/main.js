@@ -18,7 +18,7 @@ function successCallback(stream) {
   
   let supported = navigator.mediaDevices.getSupportedConstraints();
   console.log(supported);
-  sampleArea.insertAdjacentHTML("beforeend",supported);
+
   
     // MediaTrackの取得
   let tracks = stream.getTracks();
